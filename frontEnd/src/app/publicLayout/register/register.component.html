@@ -1,0 +1,16 @@
+<div class="divRegister">
+    <form class="divForm" [formGroup]="dataForm">
+        <h1 class="titulo">Ingresa tus datos</h1>
+        <div class="camposDigitar">
+            <input type="text" placeholder="Nombre" formControlName="nombre"/>
+            <input type="number" placeholder="Cédula" formControlName="cedula"/>
+            <input type="email" placeholder="Email" formControlName="email"/>
+            <input type="password" placeholder="Password" formControlName="password"/>
+        </div>
+        <button class="buttonCrear" (click)="onClickCrear()">Crear</button>
+        <a [routerLink]="['/login']" 
+            routerLinkActive ="active" 
+            class="volverAtras">Ya tengo una cuenta</a>
+    </form>
+</div>
+

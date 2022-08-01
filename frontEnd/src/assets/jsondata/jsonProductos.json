@@ -1,0 +1,39 @@
+[
+    {
+        "nombre": "acordeón",
+        "precio": 2000000,
+        "cantidad": 5,
+        "descripcion": "Instrumento musical de viento formado por un fuelle rectangular y dos armazones",
+        "imgurl": "https://www.ecured.cu/images/e/ec/Acordeon.jpg",
+        "categoriaid": 2,
+        "cedula": 123456789
+    },
+    {
+        "nombre": "charrasca",
+        "precio": 200000,
+        "cantidad": 23,
+        "descripcion": "Instrumento musical de percusión que consiste en una caña de madera o un tubo de metal provisto de una serie de ranuras transversales sobre las que se desliza un palillo, produciendo un sonido vibrante",
+        "imgurl": "https://http2.mlstatic.com/D_NQ_NP_960903-MCO45062679261_032021-V.jpg",
+        "categoriaid": 3,
+        "cedula": 123456789
+    },
+
+    {
+        "nombre": "violin",
+        "precio": 5000000,
+        "cantidad": 2,
+        "descripcion": "El violín es un instrumento de cuerda frotada tocado con un arco",
+        "imgurl": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/KVOFEUAMIZAHFHOE7EJX62T33A.jpg",
+        "categoriaid": 1,
+        "cedula": 123456789
+    },
+    {
+        "nombre": "panderos",
+        "precio": 40400,
+        "cantidad":28,
+        "descripcion": "Instrumento musical muy parecido a la pandereta, pero de mayor tamaño y que puede tener o no sonajas o cascabeles; se toca golpeándolo con la mano o con una maza.",
+        "imgurl": "https://www.escribircanciones.com.ar/wp-content/uploads/pandereta.jpg",
+        "categoriaid": 3,
+        "cedula": 123456789
+    }
+]

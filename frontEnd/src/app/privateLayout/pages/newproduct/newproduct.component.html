@@ -1,0 +1,36 @@
+<section class="sectionNewProduct">
+    <div class="divHeaderNewProduct"> 
+        <h1>New Product</h1>
+        <p>Crea un nuevo producto de venta</p>
+    </div>
+    <form class="divNewProduct" [formGroup]="myForm">
+        <div class="divFormProduct">
+            <input type="text" placeholder="nombre" formControlName="nombre"/>
+            <select formControlName="categoria">
+                <option value="seleccione">Categoria</option>
+                <option value="2">Viento</option>
+                <option value="1">Cuerda</option>
+                <option value="3">Percusion</option>
+            </select>
+            <input type="number" placeholder="Precio" min="0" formControlName="precio"/>
+            <input type="number" placeholder="Cantidad" min="0" formControlName="cantidad"/>
+            <textarea placeholder="Description" formControlName="descripcion"></textarea>
+            <input type="text" placeholder="link img" min="0" formControlName="imgurl"/>
+            <button class="buttonComprar" (click)="onClickCrear()">Crear</button>
+        </div>
+        <div class="divImgProduct">
+            <div class="divGrupoImgProduct">
+                <img src="https://img.freepik.com/foto-gratis/primer-plano-guitarra-acustica-espacio-copia_169016-3346.jpg?w=900&t=st=1659018221~exp=1659018821~hmac=4b5691d1319fcefd6473db3c5e2e4c0dc6c98767416595da20800e31c7bdb083" alt="" />
+            </div>
+            <div class="divGrupoImgProduct">
+                <img src="https://img.freepik.com/foto-gratis/imagen-pintura-trompeta_1379-529.jpg?w=826&t=st=1659018417~exp=1659019017~hmac=b8960e01ad36ca43182427d44cf73c2aa61a0c8d4c8ddac7250bc060c8001697" alt="" />
+            </div>
+            <div class="divGrupoImgProduct">
+                <img alt="" src="https://img.freepik.com/foto-gratis/seccion-intermedia-estudiante-tocando-piano_107420-64892.jpg?t=st=1659018539~exp=1659019139~hmac=8e4cb63172571da71e96ca3a69563e820a42edaa2a96fbc562922c57ba332a06" />
+            </div>
+            <div class="divGrupoImgProduct">
+                <img src="https://img.freepik.com/foto-gratis/bateria-sobre-fondo-oscuro-iluminacion-escenica-copie-espacio_169016-14046.jpg?w=740&t=st=1659018678~exp=1659019278~hmac=ccebabf10efec235da766ff1daab0ddb3ebe5d53b76b9deeaf77969a1fba4541" alt="" />
+            </div>
+        </div>
+    </form>
+</section>

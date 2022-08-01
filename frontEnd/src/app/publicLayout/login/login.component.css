@@ -1,0 +1,90 @@
+.mainLogin{
+    background-image: url(../../../assets/images/fondos/inicio1.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.divLogin{
+    background: rgba(245, 245, 245,0.95);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    justify-content: center;
+    border: 1px #d5b00b solid;
+    align-items: center;
+  }
+  .titulo{
+    font-size: 17pt;
+    width: 150px;
+    text-align: center;
+    line-height: 18px;
+    margin-bottom: 20px;
+    color: #2C3333;
+  }
+  .imgIcono{
+   width: 100px;
+   border-radius: 5px;
+   margin-bottom: 20px;   
+  }
+
+  .inputForm{
+    width: 100%;
+    padding: 7px 10px;
+    border: 1px gray solid;
+    border-radius: 20px;
+    outline: none;
+    font-size: 12.5pt;
+    margin-bottom: 10px;
+    color: #1c1c1c;
+  }
+  .inputForm:hover, .inputForm:focus{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .inputIngresar{
+    width: 100%;
+    padding: 7px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    background: #EF3F3F;
+    border: 1px #b42c2c solid;
+    font-size: 13pt;
+    font-weight: 400;
+    color: #fafafa;
+  }
+  .inputIngresar:hover{
+    font-weight: 600;
+  }
+  .pRegistrarme{
+    color: #555555;
+    text-align: right;
+    width: 100%;
+    padding-right: 15px;
+    font-size: 11.5pt;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .pRegistrarme:hover{
+    font-weight: 500;
+  }
+  @media (max-width: 300px) {
+    .mainLogin{
+      justify-content: center;
+    }
+  }
+  @media (max-width: 2000px) {
+    .mainLogin{
+      justify-content: none;
+    }
+    .divLogin{
+      margin-left: 200px;
+    }
+  }

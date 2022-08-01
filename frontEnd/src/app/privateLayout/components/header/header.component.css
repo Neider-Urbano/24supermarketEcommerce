@@ -1,0 +1,87 @@
+.header {
+  background: #FaFaFa;
+}
+.header .headerContactos {
+  background: #191919;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  align-items: center;
+  color: #EEEBDD;
+}
+.header .headerContactos div {
+  display: flex;
+}
+.header .headerContactos div img {
+  width: 18px;
+  margin-right: 7px;
+}
+.header .headerCuenta {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px;
+  align-items: center;
+}
+.header .headerCuenta .iconoProyecto {
+  width: 50px;
+  height: 50px;
+}
+.header .headerCuenta .headerBuscar {
+  text-align: center;
+}
+.header .headerCuenta .headerBuscar .butonBusqueda {
+  display: flex;
+  border: 1px gray solid;
+  border-radius: 3px;
+  justify-content: space-between;
+}
+.header .headerCuenta .headerBuscar .butonBusqueda select {
+  border: none;
+  outline: none;
+  font-size: 12.5pt;
+  padding: 0px 10px;
+}
+.header .headerCuenta .headerBuscar .butonBusqueda input {
+  border: none;
+  outline: none;
+  padding: 0px 10px;
+  font-size: 12.5pt;
+  border-right: 1px gray solid;
+}
+.header .headerCuenta .headerBuscar .butonBusqueda div {
+  width: 35px;
+}
+.header .headerCuenta .headerBuscar .butonBusqueda div img {
+  width: 25px;
+  margin-top: 3px;
+}
+.header .headerCuenta .headerBuscar .pInformativoBusqueda {
+  margin-top: 5px;
+  font-size: 11pt;
+}
+.header .headerCuenta .divIconoCuenta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .headerCuenta .divIconoCuenta img {
+  width: 35px;
+}
+.header .nav {
+  border-top: 1px gray solid;
+  border-bottom: 1px gray solid;
+  text-align: center;
+  padding: 11.5px 30px;
+}
+.header .nav a {
+  margin: 8px;
+  font-size: 12.5pt;
+  font-weight: 500;
+  cursor: pointer;
+}
+.header .aCerraCesion {
+  cursor: pointer;
+}
+.header .aCerraCesion:hover {
+  color: #be1515;
+}

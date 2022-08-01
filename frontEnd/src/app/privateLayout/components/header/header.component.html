@@ -1,0 +1,37 @@
+<header class="header">
+    <section class="headerContactos">
+        <div><img src="assets/images/icons/contact.png" /><p>+320400023</p></div>
+        <div><img src="assets/images/icons/email.png" alt="" /><p>jjuly8julianur012b@gmail.com</p></div>
+        <div><p>Paz de Ariporo - Casanare</p></div>
+    </section>
+    <section class="headerCuenta">
+        <img src="assets/images/icons/icons1.jpg" alt="" class="iconoProyecto"/>
+        <div class="headerBuscar">
+            <div class="butonBusqueda">
+                <select>
+                    <option value="seleccione">Categoria</option>
+                    <option value="2">Viento</option>
+                    <option value="1">Cuerda</option>
+                    <option value="3">Percusion</option>
+                </select> 
+                <input type="text" placeholder="buscar...." />
+                <div>
+                    <img src="assets/images/icons/search.png" alt=""/>
+                </div>
+            </div> 
+            <p class="pInformativoBusqueda">Escoge una categoria y encuentra tu producto</p>
+        </div>
+        <div class="divIconoCuenta">
+            <img src="assets/images/icons/user.png" alt=""/>
+            <a (click)="cerrarCesion()" class="aCerraCesion">Cerrar sesión</a>
+        </div>
+    </section>
+    <nav class="nav">
+        <a [routerLink]="['/home/products']" routerLinkActive ="active">Products</a>
+        <a [routerLink]="['/home/carrito']" routerLinkActive ="active">Carrito</a>
+        <a [routerLink]="['/home/newproduct']" routerLinkActive ="active">New product</a>
+        <a [routerLink]="['/home/misproducts']" routerLinkActive ="active">Mis products</a>
+        <a [routerLink]="['/home/micuenta']" routerLinkActive ="active">Mi cuenta</a>
+    </nav>
+</header>
+

@@ -1,0 +1,40 @@
+<section class="sectionCarrito">
+    <div class="divHeaderCarrito"> 
+        <h1>Products comprados</h1>
+        <p>Disfruta de los mejores productos del mercado</p>
+    </div>
+    <div *ngIf="dataSource.length===0">
+        <p>Listado de compras vacio</p>
+    </div>
+   <table mat-table [dataSource]="dataSource" class="divCarrito" *ngIf="dataSource.length">
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef>id</th>
+            <td mat-cell *matCellDef="let element, let indice=index">{{indice+1}}</td>
+        </ng-container>
+        <ng-container matColumnDef="cedula">
+          <th mat-header-cell *matHeaderCellDef>Cedula</th>
+          <td mat-cell *matCellDef="let element">{{element.cedula}}</td>
+      </ng-container>
+      <ng-container matColumnDef="producto_id">
+          <th mat-header-cell *matHeaderCellDef>Producto_id</th>
+          <td mat-cell *matCellDef="let element">{{element.productoid}}</td>
+      </ng-container>
+      <ng-container matColumnDef="cantidad_producto">
+          <th mat-header-cell *matHeaderCellDef>Cantidad_producto</th>
+          <td mat-cell *matCellDef="let element">{{element.cantidadproducto}}</td>
+      </ng-container>   
+      <ng-container matColumnDef="nombre_producto">
+        <th mat-header-cell *matHeaderCellDef>Nombre_producto</th>
+        <td mat-cell *matCellDef="let element">{{element.nombreproducto}}</td>
+      </ng-container>  
+      <ng-container matColumnDef="acciones">
+          <th mat-header-cell *matHeaderCellDef>Acción</th>
+          <td mat-cell *matCellDef="let element;let i = index" class="action-link center-col-accion">
+            <button mat-raised-button color="warn" class="eliminarButton" (click)="eliminarCarrito(element.carritoid)">Eliminar</button>
+          <td mat-footer-cell *matFooterCellDef></td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>  
+</section>
+

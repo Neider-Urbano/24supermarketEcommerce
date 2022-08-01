@@ -1,0 +1,87 @@
+.header{
+    background: #FaFaFa;
+    .headerContactos{
+        background: #191919;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px;
+        align-items: center;
+        color: #EEEBDD;
+        div{
+            display: flex;
+            img{
+                width: 18px;
+                margin-right: 7px;
+            }
+        }  
+    }
+    .headerCuenta{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 30px;
+        align-items: center;
+        .iconoProyecto{
+            width: 50px;
+            height: 50px;
+        }
+        .headerBuscar{
+            text-align: center;
+            .butonBusqueda{
+                display: flex;
+                border: 1px gray solid;
+                border-radius: 3px;
+                justify-content: space-between;
+                select{
+                    border: none;
+                    outline: none;
+                    font-size: 12.5pt;
+                    padding: 0px 10px;
+                }
+                input{
+                    border:none;
+                    outline: none;
+                    padding: 0px 10px;
+                    font-size: 12.5pt;
+                    border-right: 1px gray solid;
+                }
+                div{
+                    width: 35px;
+                    img{
+                        width: 25px;
+                        margin-top: 3px;
+                    }
+                }
+            }
+            .pInformativoBusqueda{
+                margin-top: 5px;
+                font-size: 11pt;
+            }
+        }
+        .divIconoCuenta{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 35px;
+            }
+        }
+    }
+    .nav{
+        border-top: 1px gray solid;
+        border-bottom: 1px gray solid;
+        text-align: center;
+        padding: 11.5px 30px;
+        a{
+            margin: 8px;
+            font-size: 12.5pt;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+    .aCerraCesion{
+        cursor: pointer;
+        &:hover{
+            color: rgb(190, 21, 21);
+        }
+    }
+}

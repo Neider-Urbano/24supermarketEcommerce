@@ -1,0 +1,73 @@
+.sectionNewProduct {
+  padding: 20px 30px;
+  width: 900px;
+  min-height: 400px;
+}
+.sectionNewProduct .divHeaderNewProduct h1 {
+  font-size: 13.5pt;
+}
+.sectionNewProduct .divHeaderNewProduct p {
+  font-size: 12pt;
+}
+.sectionNewProduct .divNewProduct {
+  margin-top: 20px;
+  display: flex;
+}
+.sectionNewProduct .divNewProduct .divFormProduct {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.sectionNewProduct .divNewProduct .divFormProduct input,
+.sectionNewProduct .divNewProduct .divFormProduct select {
+  padding: 6px 10px;
+  font-size: 12.5pt;
+  width: 320px;
+  outline: none;
+  border: 1px gray solid;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.sectionNewProduct .divNewProduct .divFormProduct textarea {
+  padding: 6px 10px;
+  font-size: 12.5pt;
+  max-width: 320px;
+  min-width: 320px;
+  max-height: 100px;
+  min-height: 60px;
+  outline: none;
+  border: 1px gray solid;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.sectionNewProduct .divNewProduct .divFormProduct .buttonComprar {
+  padding: 5px 15px;
+  cursor: pointer;
+  outline: none;
+  font-size: 12.5pt;
+  background: #EF3F3F;
+  border: 1px #b42c2c solid;
+  font-weight: 400;
+  color: #fafafa;
+  border-radius: 3px;
+}
+.sectionNewProduct .divNewProduct .divFormProduct .buttonComprar:hover {
+  font-weight: 600;
+}
+.sectionNewProduct .divNewProduct .divImgProduct {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+  padding-right: 40px;
+}
+.sectionNewProduct .divNewProduct .divImgProduct .divGrupoImgProduct {
+  height: 150px;
+  position: relative;
+}
+.sectionNewProduct .divNewProduct .divImgProduct .divGrupoImgProduct img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  border: 1px gray solid;
+}

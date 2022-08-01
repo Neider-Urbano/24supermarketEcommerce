@@ -1,0 +1,18 @@
+.sectionMisProducts {
+  padding: 20px 30px;
+  width: 900px;
+  min-height: 400px;
+}
+.sectionMisProducts .divHeaderMisProducts h1 {
+  font-size: 13.5pt;
+}
+.sectionMisProducts .divHeaderMisProducts p {
+  font-size: 12pt;
+}
+.sectionMisProducts .divMisProducts {
+  margin-top: 20px;
+  width: 100%;
+}
+.sectionMisProducts .divMisProducts .eliminarButton {
+  margin-left: 20px;
+}

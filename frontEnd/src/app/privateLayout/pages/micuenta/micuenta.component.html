@@ -1,0 +1,26 @@
+<section class="sectionMiCuenta">
+    <div class="divHeaderMiCuenta"> 
+        <h1>Mi Cuenta</h1>
+        <p>Administra tu cuenta creada</p>
+    </div>
+    <div class="divMiCuenta">
+        <form [formGroup]="myForm">
+            <div class="divCamposCuenta">
+                <input type="number" placeholder="cedula" formControlName="cedula" readonly/>
+                <input type="text" placeholder="nombre" formControlName="nombre"/>
+                <input type="email" placeholder="email" formControlName="email"/>
+                <input type="password" placeholder="password" formControlName="password"/>
+            </div>
+            <div class="divDirecciones">
+                <h1>Mis direcciones</h1>
+                <div class="divListaDirecciones" formControlName="direcciones" *ngIf="myForm.value.direcciones.length">
+                    <div class="divDireccion" *ngFor="let d of myForm.value.direcciones" >{{d.direccion}}</div>
+                </div>
+            </div>
+        </form>
+        <div class="divAccionesCuenta">
+            <button class="buttonActualizar" (click)="onClickActualizar()">Actualizar</button>
+            <button class="buttonEliminar" (click)="onClickEliminar()">Eliminar</button>
+        </div>
+    </div>
+</section>

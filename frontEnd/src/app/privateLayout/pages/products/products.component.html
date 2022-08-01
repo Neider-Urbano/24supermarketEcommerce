@@ -1,0 +1,40 @@
+<main class="mainProductos">
+    <div class="divHeaderProductos">
+        <div>  
+            <h1>Products</h1>
+            <p>Miles de productos para escoger</p>
+        </div>
+        <div>
+            <select (change)="changeFnOrdenar($event)" class="selectOrdenar">
+                <option value="seleccione">Ordenar</option>
+                <option value="1">AZ</option>
+                <option value="2">ZA</option>
+                <option value="3">Precio Asc</option>
+                <option value="4">Precio Desc</option>
+            </select>
+            <select (change)="changeFn($event)">
+                <option value="seleccione">Categoria</option>
+                <option value="2">Viento</option>
+                <option value="1">Cuerda</option>
+                <option value="3">Percusion</option>
+            </select>
+        </div>
+    </div>
+    <div *ngIf="productos.length===0">
+        <p>Lista de productos vacia</p>
+    </div>
+        <table class="divProducts">
+            <tbody *ngFor="let producto of productos" class="articleProduct">
+                <tr class="trimgproducto">
+                    <img src={{producto.imgurl}} alt=""/>
+                </tr>
+                <tr class="detallesProduct">
+                    <h1>{{producto.nombre}}</h1>
+                    <p>${{producto.precio}}</p>
+                    <a [routerLink]="['/home/detailproduct/', producto.productoid]" routerLinkActive ="active">
+                        Detalles
+                    </a>
+                </tr>
+            </tbody>
+        </table>
+</main>

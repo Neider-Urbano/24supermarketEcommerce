@@ -1,0 +1,45 @@
+<section class="sectionDetailProduct">
+    <div class="divHeaderDetailProduct"> 
+        <h1>Detail Product</h1>
+        <p>Detalles de tu producto escogido</p>
+    </div>
+    <div class="divDetallesAndCompra">
+        <div class="divDetalleProduct" *ngFor="let producto of productos">
+            <div class="divImgProduct">
+                <img src={{producto.imgurl}} alt=""/>
+            </div>
+            <div class="divDetallesInformation">
+                <h1>{{producto.nombre}}</h1>
+                <h2>Description</h2>
+                <p>{{producto.descripcion}}</p>
+                <p>Categoria: {{categoria}}</p>
+                <h1>${{producto.precio}}</h1>
+                <button class="buttonComprar" (click)="onClickComprar()">Comprar</button>
+            </div>
+        </div>
+
+        <div *ngIf="clickCompar==true" class="divFormularioComprar">
+            <h1>Formulario de Compra</h1>
+            <form class="divCamposCompra" [formGroup]="myForm" >
+                <input type="number" placeholder="cantidad del producto"  formControlName="cantidad"/>
+                <select  formControlName="formapago">
+                    <option value="seleccione" disabled>Tarjeta de pago</option>
+                    <option value="1">Bancolombia</option>
+                    <option value="2">BBVA</option>
+                    <option value="3">Davivienda</option>
+                    <option value="4">Mastercard</option>
+                </select> 
+                <input type="number" placeholder="numero de cuenta" formControlName="numerocuenta"/>
+                <select (change)="selectDireccion($event)" formControlName="direccion">
+                    <option value="seleccione" >Dirección</option>
+                    <option  *ngFor="let direccion of direcciones" value="{{direccion.direccionid}}"> 
+                        {{ direccion.direccion }}
+                    </option>
+                    <option value="agregar">Agregar dirección</option>
+                </select>
+                <input *ngIf="clickAgregarDireccion==true" type="text" placeholder="nueva direccion" formControlName="direccion"/>
+                <button class="botonGenerarFactura" (click)="onClickGenerarFactura()">Generar factura</button>
+            </form>
+        </div>
+    </div>
+</section>

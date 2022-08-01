@@ -1,0 +1,82 @@
+.divRegister{
+    background-image: url(../../../assets/images/fondos/inicio2.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.divForm{
+    background: rgba(245, 245, 245,0.95);
+    width: 300px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px #5d75c4 solid;
+    display: flex;
+    flex-direction: column;   
+}
+.titulo{
+    font-size: 16pt;
+    text-align: center;
+    line-height: 18px;
+    margin-bottom: 20px;
+    color: #2C3333;
+  }
+input{
+    width: 100%;
+    padding: 7px 10px;
+    border: 1px gray solid;
+    border-radius: 20px;
+    outline: none;
+    font-size: 12.5pt;
+    margin-bottom: 10px;
+    color: #1c1c1c;
+}
+input:hover, input:focus{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.buttonCrear{
+    width: 100%;
+    padding: 7px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    background: #EF3F3F;
+    border: 1px #b42c2c solid;
+    font-size: 13pt;
+    font-weight: 400;
+    color: #fafafa;
+  }
+  .buttonCrear:hover{
+    font-weight: 600;
+  }
+.volverAtras{
+    color: #555555;
+    text-align: right;
+    width: 100%;
+    padding-right: 15px;
+    font-size: 11.5pt;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .volverAtras:hover{
+    font-weight: 500;
+  }
+@media (max-width: 300px) {
+    .divRegister{
+      justify-content: center;
+    }
+}
+@media (max-width: 2000px) {
+    .divRegister{
+      justify-content: none;
+    }
+    .divForm{
+      margin-left: 200px;
+    }
+}

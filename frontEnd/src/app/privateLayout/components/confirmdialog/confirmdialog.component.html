@@ -1,0 +1,12 @@
+<form mat-dialog-content [formGroup]="myForm" class="formActualizar">
+    <h1>Formulario de Actualización</h1>
+    <input type="text" placeholder="nombre" formControlName="nombre"/>
+    <input type="number" placeholder="Precio" min="0" formControlName="precio"/>
+    <input type="number" placeholder="Cantidad" min="0" formControlName="cantidad"/>
+    <textarea placeholder="Description" formControlName="descripcion"></textarea>
+    <input type="text" placeholder="link img" min="0" formControlName="imgurl"/>
+</form>
+<div mat-dialog-actions>
+    <button mat-button (click)="onClickActualizar()" color="primary">Actualizar</button>
+    <button mat-button [mat-dialog-close]="true" color="warn">Cancelar</button>
+</div>

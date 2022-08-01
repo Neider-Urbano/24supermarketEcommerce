@@ -1,0 +1,13 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    font-size: 11pt;
+    background: #191919;
+    color:#F4F4F4;
+    margin-top: 20px;
+}
+
+p:nth-child(2){
+    font-weight: 500;
+}

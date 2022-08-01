@@ -1,0 +1,17 @@
+.sectionCarrito {
+  padding: 20px 30px;
+  min-height: 400px;
+  width: 900px;
+}
+.sectionCarrito .divHeaderCarrito h1 {
+  font-size: 13.5pt;
+}
+.sectionCarrito .divHeaderCarrito p {
+  font-size: 12pt;
+}
+
+.sectionCarrito .divCarrito {
+  margin-top: 20px;
+  width: 100%;
+}
+

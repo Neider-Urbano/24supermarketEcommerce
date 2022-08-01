@@ -1,0 +1,32 @@
+.formActualizar {
+  display: flex;
+  flex-direction: column;
+}
+.formActualizar h1 {
+  font-size: 13.5pt;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.formActualizar input,
+.formActualizar select {
+  padding: 6px 10px;
+  font-size: 12.5pt;
+  width: 320px;
+  outline: none;
+  border: 1px gray solid;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.formActualizar textarea {
+  padding: 6px 10px;
+  font-size: 12.5pt;
+  max-width: 320px;
+  min-width: 320px;
+  max-height: 100px;
+  min-height: 60px;
+  outline: none;
+  border: 1px gray solid;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}

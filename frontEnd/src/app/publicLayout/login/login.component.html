@@ -1,0 +1,12 @@
+<div class="mainLogin">
+    <form class="divLogin" [formGroup]="dataForm">
+        <img src="assets/images/icons/icons1.jpg" alt="" class="imgIcono"/>
+        <h1 class="titulo">Create tu cuenta</h1>
+        <input type="text" placeholder="cedula" name="username" class="inputForm" formControlName="cedula"/>
+        <input type="password" placeholder="password" name="password" class="inputForm" formControlName="password"/>
+        <button class="inputIngresar" (click)="onClickIngresar()">
+             Ingresar
+        </button>
+        <a class="pRegistrarme" [routerLink]="['/register']" routerLinkActive ="active">Registrarme</a>
+    </form>
+</div>
